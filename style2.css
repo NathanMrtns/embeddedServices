@@ -37,16 +37,16 @@
 	
 	#footer {
 	    background-color:#005d9e;
+	    color: white;
 	    width:100%;
+	    text-align: center;
 	    height: 40px;
-	    color:white;
-	    /*clear:both;*/
-	    /*position: fixed;*/
+	    clear:both;
+	    position: relative;
 	    bottom:0;
-	    /*margin-top:50px;*/
-		text-align:center;
-	    /*padding-top:8px;
-	    padding-bottom:8px;*/
+	   	margin-top:50px;
+	    padding-top:8px;
+	    padding-bottom:8px;
 	}
 	
 	/*img #logo{
@@ -145,3 +145,4 @@
 		height: 35px;
 		padding-right: 20px;
 	}
+
