@@ -15,7 +15,7 @@
 		max-width: 100%;
 		padding: 0;
 	}
-	
+
 	body {
 		background-color: white;
 	}
@@ -27,32 +27,34 @@
 		background-color:transparent;
 	}
 		
-	#header {
+	#header{
 		background-color:#005d9e;
 		color:white;
-		height:128px;
-		overflow: hidden;
+		width:100%;
+		/*height:128px;
+		overflow: hidden;*/
 	}
 	
+	html, body {
+		height: 100%;
+	}
+
+	#wrapper {
+		min-height: 100%;
+		height: auto !important;
+		height: 100%;
+		margin: 0 auto -40px;
+	}
+	#footer, #push {
+		height: 40px;
+	}
+
 	#footer {
 	    background-color:#005d9e;
-	    max-width:100%;
-	    color:white;
-	    clear:both;
-	    margin-top:50px;
-		text-align:center;
-	    padding-top:8px;
+	    color: white;
+	    text-align: center;
+	   	padding-top:8px;
 	    padding-bottom:8px;
-	}
-	
-	
-	img#logo{
-		width:267px;
-		height:128px;
-		background-color:white;
-		float:left;
-		margin-right:40px;
-	
 	}
 	
 	ul#menu {
@@ -88,16 +90,17 @@
 }
 
 
-	img {
+	.image {
+		position: relative; 
 		width:200px;
 		height:200px;
 		border: 0;
+		z-index: -1;
 	}
 	
 	.servico, .app{
 		width:250px;
 		height:250px;
-		float:left;
 		padding:15px;
 		margin:auto;
 		text-align:center;
@@ -126,11 +129,20 @@
 	    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	    padding: 12px 16px;
 	    font-size:80%;
+	    z-index: 2;
 	}
 	
 	.app:hover .dropdown-content {
 		text-align: left;
 	    display: block;
+	    position: absolute;
 	    color: black;
+	   	z-index: 2;
 	}
-	
+
+	#logo{
+		float:left;
+		height: 35px;
+		padding-right: 20px;
+		padding-bottom: 20px;
+	}
